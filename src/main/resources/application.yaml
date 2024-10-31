@@ -1,0 +1,24 @@
+
+spring:
+  application:
+    name: api-hyperledger-fabric-spring
+#  main:
+#    allow-circular-references: true
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: alpha
+
+
+fabric:
+  chaincode-name: "basic"
+  channel-name: "mychannel"
+  msp_id: "Org1MSP"
+  peer-endpoint: "localhost:7051"
+  override-auth: "peer0.org1.example.com"
+
+
+
+
